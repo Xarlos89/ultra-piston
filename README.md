@@ -14,6 +14,8 @@
 
 An all-in-one wrapper for the [Piston API](https://piston.readthedocs.io/en/latest/) in Python.
 
+As of February 2026, PistonAPI requires an API key! Contact the PistonAPI project to get yours. 
+
 ## ✨ Features
 
 This library offers robust customization options and essential functionalities, including:
@@ -49,8 +51,9 @@ $ uv add ultra_piston
 ```python
 from ultra_piston import PistonClient, File
 
-client = PistonClient()
-
+client = PistonClient(
+    api_key=f"Bearer {os.environ['PISTON_API_TOKEN']}",
+)
 result = client.post_execute(
     language="python3",
     version="3.10.0",
@@ -67,7 +70,9 @@ To use the asynchronous variant of a method, simply append `_async` to the name 
 import asyncio
 from ultra_piston import PistonClient, File
 
-client = PistonClient()
+client = PistonClient(
+    api_key=f"Bearer {os.environ['PISTON_API_TOKEN']}",
+)
 
 async def main():
     result = await client.post_execute_async(
