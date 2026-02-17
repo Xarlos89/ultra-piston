@@ -49,6 +49,7 @@ $ uv add ultra_piston
 ## 🚀 Quick Start
 
 ```python
+import os
 from ultra_piston import PistonClient, File
 
 client = PistonClient(
@@ -67,6 +68,7 @@ Ultra Piston also provides async methods for all the available endpoints!
 To use the asynchronous variant of a method, simply append `_async` to the name of its synchronous counterpart.
 
 ```python
+import os
 import asyncio
 from ultra_piston import PistonClient, File
 
