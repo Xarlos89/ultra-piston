@@ -14,7 +14,7 @@
 
 An all-in-one wrapper for the [Piston API](https://piston.readthedocs.io/en/latest/) in Python.
 
-As of February 2026, PistonAPI requires an API key! Contact the PistonAPI project to get yours. 
+> Important Note: The Piston API is no longer freely available to the public (as of Feb 15, 2026). To obain authorization, please reach out to EngineerMan on [Discord](https://discord.gg/engineerman). Authorization is only granted for non-commercial use (no paid products), low volume, and particular those in the educational, tinkering, or competitive code space. Optionally, you can self host the API and use this wrapper along with it.
 
 ## ✨ Features
 
