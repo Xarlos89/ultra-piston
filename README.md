@@ -52,9 +52,7 @@ $ uv add ultra_piston
 import os
 from ultra_piston import PistonClient, File
 
-client = PistonClient(
-    api_key=f"Bearer {os.environ['PISTON_API_TOKEN']}",
-)
+client = PistonClient(api_key=os.environ['PISTON_API_TOKEN'])  # Pass your API key like so (if you have any)
 result = client.post_execute(
     language="python3",
     version="3.10.0",
@@ -72,9 +70,7 @@ import os
 import asyncio
 from ultra_piston import PistonClient, File
 
-client = PistonClient(
-    api_key=f"Bearer {os.environ['PISTON_API_TOKEN']}",
-)
+client = PistonClient(api_key=os.environ['PISTON_API_TOKEN'])  # Pass your API key like so (if you have any)
 
 async def main():
     result = await client.post_execute_async(
